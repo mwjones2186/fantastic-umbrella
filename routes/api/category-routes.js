@@ -44,11 +44,20 @@ router.post("/", (req, res) => {
 
 router.put("/:id", (req, res) => {
   // update a category by its `id` value
-  Category.put({
+  Category.update({
     where: {
       id: req.params.id,
     },
-  }).then(dbCategoryData =>{
+  }).then((category) => {
+    const categories = category.map(({category_id}) => category_id);
+    const newCategories = req.body.category_id
+      .filter((category_id) => !category_id.includes(category_id))
+      .map((category_id) =>{
+        return {
+          category_id: req.params.category_id,
+          category_id,
+        };
+      });
     if (!dbCategoryData) {
       res.status(404).json({message: 'No category found with that ID'});
       return;
