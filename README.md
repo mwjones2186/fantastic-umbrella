@@ -11,7 +11,9 @@
   
   ## Description 
 
-  Fantastic Umbrella is a terrible name that gives zero description of my actual application. Hindsight 20/20 I would have deleted this repository and created a new one to better display the actual purpose of this application. With that being said, Fantastic Umbrella is a backend route builder that allows a user to create and store new data into a database. It can pull table data, create table data, select a specific product, category, product tag or simply tag information. .
+  Fantastic Umbrella is a terrible name that gives zero description of my actual application. Hindsight 20/20 I would have deleted this repository and created a new one to better display the actual purpose of this application. Something more along the lines of Inventory-Upkeep-database or something similar....
+  
+  With that being said, Fantastic Umbrella is a backend route builder that allows a user to create and store new data into a database. It can pull table data, create table data, select a specific product, category, product tag or simply tag information. .
 
   For a better understanding of how backend development is routed in order to be scalable and concise. This application can be valuable in a number of diferent uses. Including retail, finance, sports or individual office needs. All catagories, products, product tags and tags can be modified to allow any kind of input to target specific data in which you choose to store or return. .
 
